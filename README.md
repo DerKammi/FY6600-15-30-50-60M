@@ -1,4 +1,4 @@
-# Feeltech FY6600-15-30-50-60M Series
+# Feeltech FY6600-15-30-50-60MHz Series
 
 Based on the discussion in:
 
