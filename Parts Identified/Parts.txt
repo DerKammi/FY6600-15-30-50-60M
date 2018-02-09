@@ -10,9 +10,9 @@
 10     OPA686N		/wideband low noise voltage amplifier
 11     JRC4558D		/Dual op amp
 12     JRC4558D		/Dual op amp
-13 U5  THS30021		/wideband amplifier
-   U21 THS3095		/Option for 13/U5
-   U22 THS3095		/Option for 13/U5
+13 U5  THS3002I		/wideband amplifier
+   U21 THS3001		/Option for 13/U5
+   U22 THS3001		/Option for 13/U5
 
 
 1611840	ASV-50.000MHZ-EJ-T -  Oscillator, 50 MHz, 20 ppm, SMD, 7mm x 5mm, 3.3 V, ASV Series
