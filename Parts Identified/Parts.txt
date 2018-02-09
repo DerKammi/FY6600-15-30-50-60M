@@ -1,0 +1,19 @@
+1      CH340G		/USB to serial
+2  U7  HC245		/octal bus transceiver
+3      25Q16BVSIG	/Winbond 16MBit Serial Flash with Dual SPI
+4  U2  EP4CE6E22C8N	/FGPA Altera Cyclone4
+5      DAC904		/14 bits DAC 165Msps =Channel 2
+6      DAC904		/14 bits DAC 165Msps =Channel 1
+7      MCP4822E		/Dual 12-Bit Voltage Output DAC (level Ch2)
+8      MCP4822E		/Dual 12-Bit Voltage Output DAC (level Ch1)
+9      OPA686N		/wideband low noise voltage amplifier
+10     OPA686N		/wideband low noise voltage amplifier
+11     JRC4558D		/Dual op amp
+12     JRC4558D		/Dual op amp
+13 U5  THS30021		/wideband amplifier
+   U21 THS3095		/Option for 13/U5
+   U22 THS3095		/Option for 13/U5
+
+
+1611840	ASV-50.000MHZ-EJ-T -  Oscillator, 50 MHz, 20 ppm, SMD, 7mm x 5mm, 3.3 V, ASV Series
+2323336	THS3095DDA -  Operational Amplifier, Single, 1 Amplifier, 235 MHz, 7300 V/µs, 10V to 30V, SOIC, 8 Pins
