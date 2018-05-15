@@ -1,0 +1,10 @@
+Here is revision 0.7 of the bluepill software with the corresponding modified PC Software.
+- The Modulation functions are now working
+- The SPI write times are improved (bypassing the STM libraries and new specific 32bit write)
+- The FPGA write protocol has been improved (The FPGA protocol allows not to resend the Control Register number when the last used was the same)
+- The sweep functions are faster, because of the 2 previous points (now 6µs potential update time instead of 10µs)
+- The calibration bug found by DaveR has been fixed
+
+Enjoy and thank you for your feedback!
+
+Edit: Should it be usefull, Modulation functions and Sweep functions can work together ...

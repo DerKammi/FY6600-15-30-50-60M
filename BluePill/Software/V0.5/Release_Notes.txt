@@ -1,0 +1,13 @@
+Here is the v0.5 version of the blupill firmware, together with a modified version of the PC Software.
+
+There is a new tab with calibration data. This allows to calibrate amplitude for low frequencies but more usefull, the DC Offset.
+Once calibrated, the DC function becomes quite accurate. Of course it is better to do a manual calibration of offset and amplitude before doing the software calibration.
+Calibration data are updated and stored after each calibration value input. They are stored at the end of the STM32 flash eeprom and loaded again on startup.
+The Z output load mode is also available.
+
+In the configuration tab you can now:
+- activate/desactivate the HiZLoad mode
+- modify the Load impedance value from 50 ohms to 1kOhm
+- activate/desactivate the use of calibration data
+
+As I also prepared resampled buffers of current waves in the bluepill for future LCD display, I modified the PC Software so that it could read and use those buffers to get a picture of the waves on screen. Square, CMOS, DC and AdjPulse waves pictures are calculated, the others are live resampled values. You should now be able to see on the PC the arbitrary waves that you download to the flash eeprom.

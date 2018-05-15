@@ -1,0 +1,20 @@
+Sweeping was not a big problem but sweeping fast and accurately was not that easy.
+Counting 999.99s in a 32bit word allows a minimun resolution of 10탎. That was my starting point.
+After some optimization, sending a command through SPI @18Mhz  takes 5.6탎. My goal was then to be able to update a new value (Freq, Amp, Offset or Duty) in less then 10탎, that is computing the next value in less than 4.4탎 where the original FY6600 updates values every 900탎...
+ I had to face some more or less challenging problems, the biggests beeing:
+- CPU has only 16bit counters
+- with the standard C library a 64/32 bits division takes about 40탎 (at least one needed)
+- with the standard C library the x^y function takes more than 100 탎 (one needed for logarithm  mode)
+Plus the sweep parameters are not readable with the Feeltech protocol and the sweep functions in the PC Software were a pity so I had to rewrite them.
+But it would have been too easy otherwise  >:D
+
+So, as said, the sweeping time resolution is 10탎.
+In sweeping mode, a new value can be sent every 9.2탎 in linear mode and every 12탎 in logarithmic mode.
+Sync mode works well in sweeping mode with duty (add 5.6탎) but not so much with Frequency as the phase is not very stable at high frequencies.
+I did not code Amplitude and Offset Sync in sweeping mode at the moment (with calibration values beeing different between channels , I can't send the same values for both channels, plus you can have different output limits between channels). May be later on if this is usefull.
+I may also add later on calibration values for VCO IN.
+I also wanted to add more diagnostic information on PC Software and modify init functions but this will be for the next time...
+Also everything is ready for a sweeping function on channel 2. I will just need 2 more STM32 Timers that I prefer to have in spare for now.
+I will now start the modulation module.
+Any volonteer for an extensive quality check on the sweep module?
+Thank you for your feedback!

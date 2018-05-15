@@ -1,0 +1,16 @@
+Here is a new Version of PC Software and Firmware for BP (v0.4).
+I added a configuration tab where you can activate the Over-Voltage protection and choose the range mode from Automatic / Low Range / Mid Range / High Range. This will allow to study the frequency response for each range.
+I also removed for now the amplitude limitation to 5V after 20 Mhz.
+
+The idea now is to gather information to:
+- allow the best software calibration of Offset and Amplitude in the 3 ranges
+- Find the best thresholds for switching ranges (now +/- 0.25V and +/- 2.5V) depending on waves... or not...
+- Find the best thresholds for switching ranges for DC (works with Offset) if different from above
+- Find the best frequency limits for each wave type
+- Find whatever could be usefull ...
+
+I will program what you think is the best configuration. Up to you!  ;)
+
+I was also thinking about adding a 50 Ohms mode (at least for mid and high range as low range is not 50 ohms). Or maybe a user defined load if you think it is usefull...
+
+While waiting for feedbacks, I will work on configurations Back-up & Restore
